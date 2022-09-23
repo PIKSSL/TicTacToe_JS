@@ -23,14 +23,12 @@ class Element{
         this.#element.off();
     }
     setElementSign(sign){
-        console.log("asd")
         this.#elementSign = sign;
-        $(this.#element).html("<p>"+this.#elementSign+"</p>");
+        $(this.#element).html("<span>"+this.#elementSign+"</span>");
     }
 
     clickTrigger(){
         let choose = new CustomEvent("playerChoose",{detail:this.#index});
-
         window.dispatchEvent(choose);
     }
     

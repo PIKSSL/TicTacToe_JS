@@ -11,7 +11,6 @@ class Playground {
             const element = new Element(container, index);
             this.#elements.push(element);
         }
-        //console.log(this.#elements);
         $(window).on("playerChoose", (event) => {
             this.setSign(event.detail);
         })
