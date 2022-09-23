@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body{
+
+}
+main{
+    margin: auto;
+    background-color: whitesmoke;
+}
+.info{
+    border: 1px solid rgb(175, 15, 15);
+   margin-bottom: 50px;
+}
+.playground{
+    margin: auto;
+    width: 30rem;
+    height: 30rem;
+    min-width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid rgb(129, 194, 44);
+    font-size: xx-large;
+}
+
+.element{
+    text-align: center;
+    flex: 0 0 33%;
+    margin: 0.5px;
+
+    border: black 1px solid;
+
+}
