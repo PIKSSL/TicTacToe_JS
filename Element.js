@@ -3,7 +3,7 @@ class Element{
     static X = "X";
     static O = "O";
     #index;
-    #elementSign;
+    #elementSign = "";
     #element;
     #status;
     constructor(container,index){
@@ -24,9 +24,11 @@ class Element{
     }
     setElementSign(sign){
         this.#elementSign = sign;
-        $(this.#element).html("<span>"+this.#elementSign+"</span>");
+        $(this.#element).html("<p>"+this.#elementSign+"</p>");
     }
-
+    getElementSign(){
+        return this.#elementSign;
+    }
     clickTrigger(){
         let choose = new CustomEvent("playerChoose",{detail:this.#index});
         window.dispatchEvent(choose);
